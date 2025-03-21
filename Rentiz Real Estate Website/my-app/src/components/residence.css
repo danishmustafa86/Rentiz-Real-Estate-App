@@ -13,6 +13,13 @@
     padding-top: 100px;
 }
 
+.residence-section h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font: 700 2rem/1.2 'Poppins', sans-serif;
+
+}
 
 .residence-list {
     display: flex;
@@ -55,7 +62,6 @@
     border-radius: 8px;
     display: block; /* Makes the element a block-level element */
     margin-top: 2rem;
-    margin-bottom: 5rem;
     padding-bottom: 120px;
     /* width: 150px; Set the desired width */
     text-align: center;

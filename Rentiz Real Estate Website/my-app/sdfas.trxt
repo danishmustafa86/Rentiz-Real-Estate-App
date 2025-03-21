@@ -1,22 +1,21 @@
 /* Ensure the parent container is positioned relative */
-.mainpage-containerhome {
+.mainpage-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  background-color: rgb(18, 18, 18);
   height: 100vh;
   /* Full viewport height */
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
   position: relative;
   /* Makes it the reference point for absolute positioning */
 }
 
 /* Style for the text container */
-.text-containerhome {
+.text-container {
   flex: 1;
-  padding-top: 100px;
+  padding-left: 50px;
   padding-right: 0px;
   margin-right: 0px;
   margin-left: 10px;
@@ -28,22 +27,22 @@
   /* Ensure it doesn't exceed 40% width */
 }
 
-.text-containerhome h1 {
+.text-container h1 {
   font-size: 1rem;
   margin-bottom: 20px;
   width: 70%;
-  font: 700 2rem/1.2 'Poppins', sans-serif;
+  font: 700 3.5rem/1.2 'Poppins', sans-serif;
 
 }
 
-.text-containerhome p {
+.text-container h6 {
   font-size: 1rem;
   margin-bottom: 30px;
   color: #666;
 }
 
 /* Style for the image container */
-.image-containerhome {
+.image-container {
   flex: 1;
   display: flex;
   justify-content: center;
@@ -55,14 +54,13 @@
   /* Ensure it doesn't exceed 60% width */
 }
 
-.image-containerhome img {
+.image-container img {
 
   height: 450px;
-  margin: 5px;
 }
 
 /* Style for the search container */
-.search-containerhome {
+.search-container {
   position: absolute;
   /* Float over the mainpage-container */
   top: 70%;
@@ -78,9 +76,47 @@
   border-radius: 10px;
   /* Rounded corners */
   z-index: 2;
-
+  /* Ensure it floats above other elements */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0;
+  /* No spacing between the select elements */
+  background-color: white;
+  /* White background for the search container */
 }
 
+.search-container select,
+.search-container button {
+  padding: 10px;
+  font-size: 16px;
+  /* border: 1px solid #ccc; */
+  /* border-radius: 5px; */
+  background-color: white;
+  /* White background for select elements */
+  margin-right: -1px;
+  /* Remove the double border between selects */
+  width: 30%;
+  /* Adjust the width of the select elements */
+}
 
+.search-container select:last-child {
+  margin-right: 0;
+  /* Ensure the last select doesn't have a margin */
+}
 
+select option {
+  white-space: pre-wrap;
+  /* Preserve line breaks */
+}
 
+.search-container button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #0056b3;
+}

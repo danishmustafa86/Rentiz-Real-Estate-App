@@ -5,6 +5,8 @@ import Featured from '../../components/featured';
 import Residence from '../../components/residence';
 import Chose from '../../components/choseus';
 import HelpPeople from '../../components/helppeople';
+import SimpleBegin from '../../components/simplybegin';
+import Footer from '../../components/footer';
 
 
 const Home = () => {
@@ -16,6 +18,8 @@ const Home = () => {
       <Residence />
       <Chose />
       <HelpPeople />
+      <SimpleBegin />
+      <Footer />
     </div>
   );
 };
