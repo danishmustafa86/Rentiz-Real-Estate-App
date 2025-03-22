@@ -9,7 +9,6 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    flex-wrap: wrap;
     border-bottom: 1px solid #1E293B;
     padding-bottom: 30px;
 }
@@ -67,7 +66,7 @@
 
 .footer-container ul {
     list-style: none;
-    padding: 0;
+    padding: 1px;
 
 }
 
