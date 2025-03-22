@@ -18,7 +18,7 @@ export default function SellingPage() {
                     <div className="step">
                         <img src="/h2.jpg" alt="Step 1" />
                         <h3>List Your Property</h3>
-                        <p>Create a listing with photos, description, and price.</p>
+                        <p>Create listing with photos, description, and price.</p>
                     </div>
                     <div className="step">
                         <img src="/h3.jpg" alt="Step 2" />
