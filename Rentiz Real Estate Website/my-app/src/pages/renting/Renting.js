@@ -23,19 +23,26 @@ export default function Renting() {
 
   const submitData = () => {
     if (formData.name && formData.email && formData.phone && formData.address) {
-      const updatedFormData = { ...formData, id }
-      setUserData([...userData, updatedFormData]);
-      setId(id + 1);
+      const emailexist = userData.some((user) => user.email == formData.email)
+      if (emailexist) {
+        alert("This email is already in use. Please enter valid email")
+      }
+      else {
+        const updatedFormData = { ...formData, id }
+        setUserData([...userData, updatedFormData]);
+        setId(id + 1);
 
-      setFormData({
-        id: "",
-        name: "",
-        email: "",
-        phone: "",
-        address: ""
-      })
+        setFormData({
+          id: "",
+          name: "",
+          email: "",
+          phone: "",
+          address: ""
+        })
+      }
+
     }
-    else{
+    else {
       alert("Please enter all feilds")
     }
 
@@ -68,7 +75,7 @@ export default function Renting() {
               <th>Phone</th>
               <th>Address</th>
             </tr>
-          </thead> 
+          </thead>
           <tbody>
             {userData.map((user, index) => (
               <tr key={index}>
@@ -77,7 +84,7 @@ export default function Renting() {
                 <td>{user.email}</td>
                 <td>{user.phone}</td>
                 <td>{user.address}</td>
-                <button onClick={()=> deleteUser(user.id)}>Delete</button>
+                <button onClick={() => deleteUser(user.id)}>Delete</button>
               </tr>
             ))}
           </tbody>
