@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import "./renting.css"
 
 export default function Renting() {
   const [formData, setFormData] = useState({
@@ -50,7 +51,7 @@ export default function Renting() {
   }
 
   return (
-    <div>
+    <div className='mainrentingdiv'>
       <h1> Enter Your Detail Here</h1>
       <div className="inputInfo" >
         <input type="text" name='name' value={formData.name} onChange={handleChange} placeholder='Enter you Name' />
@@ -62,9 +63,9 @@ export default function Renting() {
         <input type="text" name="address" value={formData.address} onChange={handleChange} placeholder='Enter you Address' />
         <br />
 
-        <button onClick={submitData}>Submit</button>
+        <button className='buttonis' onClick={submitData}>Submit</button>
       </div>
-      <div>
+      <div className='yourdata'>
         <h1>Your Data</h1>
         <table bolder="10" bgcolor='red' padding="10" cellSpacing="3">
           <thead>
@@ -84,7 +85,7 @@ export default function Renting() {
                 <td>{user.email}</td>
                 <td>{user.phone}</td>
                 <td>{user.address}</td>
-                <button onClick={() => deleteUser(user.id)}>Delete</button>
+                <button className='buttonis' onClick={() => deleteUser(user.id)}>Delete</button>
               </tr>
             ))}
           </tbody>
