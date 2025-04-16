@@ -8,6 +8,7 @@ import Products from "../pages/products/Products";
 import Renting from "../pages/renting/Renting";
 import Selling from "../pages/selling/Selling";
 import SignUp from "../pages/signup/Signup";
+import Posts from "../pages/posts/Posts";
 import GithubData from "../pages/githubdata/githubdata";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
@@ -24,6 +25,7 @@ function Routing(){
             <Route path="/products" element={<Products />} />
             <Route path="/contact" element={<ContactUs />} />
             <Route path="/githubdata" element={<GithubData />} />
+            <Route path="/posts" element={<Posts />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
         </Routes>
