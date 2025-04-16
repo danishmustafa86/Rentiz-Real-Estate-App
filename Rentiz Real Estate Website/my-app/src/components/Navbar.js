@@ -1,7 +1,7 @@
 // src/components/Navbar.js
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import './Navbar.css'; // Custom CSS for Navbar
+import './navbar.css'; // Custom CSS for Navbar
 
 const Navbar = () => {
   const location = useLocation(); // To highlight the active link
@@ -32,8 +32,14 @@ const Navbar = () => {
         <li className={location.pathname === '/contact' ? 'active' : ''}>
           <Link to="/contact">Contact Us</Link>
         </li>
+        <li className={location.pathname === '/products' ? 'active' : ''}>
+          <Link to="/products">Products</Link>
+        </li>
         <li className={location.pathname === '/login' ? 'active' : ''}>
           <Link to="/login">Login</Link>
+        </li>
+        <li className={location.pathname === '/githubdata' ? 'active' : ''}>
+          <Link to="/githubdata">Github Profile</Link>
         </li>
         <li className={location.pathname === '/signup' ? 'active' : ''}>
           <Link to="/signup">
