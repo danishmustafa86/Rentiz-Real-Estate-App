@@ -10,6 +10,7 @@ import Selling from "../pages/selling/Selling";
 import SignUp from "../pages/signup/Signup";
 import Posts from "../pages/posts/Posts";
 import GithubData from "../pages/githubdata/githubdata";
+import Counter from "../pages/counter/Counter";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 
@@ -28,6 +29,7 @@ function Routing(){
             <Route path="/posts" element={<Posts />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/counter" element={<Counter />} />
         </Routes>
 
 
