@@ -31,18 +31,16 @@ export const counterSlice = createSlice({
     name: "counter",
     initialState: {
         value: 0,
-        name : "Danish",
-        age : 23,
         posts: [],
         products : [
             {
                 id: 1,
-                name: "Product 1",
+                pName: "Product 1",
                 price: 100,
             },
             {
                 id: 2,
-                name: "Product 2",
+                pName: "Product 2",
                 price: 200,
             },
         ],
@@ -60,12 +58,8 @@ export const counterSlice = createSlice({
         incrementByAmount: (state, action) => {
             state.value += action.payload;
         },
-        setName: (state, action) => {
-            state.name = action.payload;
-        },
-        setAge: (state, action) => {
-            state.age = action.payload;
-        },
+       
+
         addProduct: (state, action) => {
             state.products.push(action.payload);
         },
@@ -95,4 +89,4 @@ export const counterSlice = createSlice({
 });
 
 
-export const { increment, decrement,reset, incrementByAmount, setName, setAge, addProduct, removeProduct } = counterSlice.actions;
+export const { increment, decrement,reset, incrementByAmount, addProduct, removeProduct } = counterSlice.actions;
