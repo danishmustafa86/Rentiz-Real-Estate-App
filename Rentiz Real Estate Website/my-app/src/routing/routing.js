@@ -13,6 +13,7 @@ import GithubData from "../pages/githubdata/githubdata";
 import Counter from "../pages/counter/Counter";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
+import Objects from "../pages/objects/Objects";
 
 function Routing(){
     return (
@@ -29,6 +30,7 @@ function Routing(){
             <Route path="/posts" element={<Posts />} />
             <Route path="/login" element={<Login />} />
             <Route path="/signup" element={<SignUp />} />
+            <Route path="/objects" element={<Objects />} />
             <Route path="/counter" element={<Counter />} />
         </Routes>
 
