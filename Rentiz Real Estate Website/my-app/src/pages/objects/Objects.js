@@ -66,7 +66,7 @@ export default function Objects() {
               setBody(obj.body);
               setId(obj.id);
             }}>
-              Edit
+              Edt
             </button>
           </div>
         ))}
