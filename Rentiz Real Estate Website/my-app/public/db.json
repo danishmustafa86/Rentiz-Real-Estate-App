@@ -1,0 +1,51 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "purpose": "rent",
+      "location": "Toronto, Canada",
+      "type": "Residential Home",
+      "price": "$1500/month",
+      "image": "https://via.placeholder.com/300x200?text=House+1"
+    },
+    {
+      "id": 2,
+      "purpose": "buy",
+      "location": "New York, USA",
+      "type": "Industrial Home",
+      "price": "$500,000",
+      "image": "https://via.placeholder.com/300x200?text=House+2"
+    },
+    {
+      "id": 3,
+      "purpose": "rent",
+      "location": "Toronto, Canada",
+      "type": "Residential Home",
+      "price": "$1300/month",
+      "image": "https://via.placeholder.com/300x200?text=House+3"
+    }
+      "id": 4,
+      "purpose": "rent",
+      "location": "Toronto, Canada",
+      "type": "Residential Home",
+      "price": "$1500/month",
+      "image": "https://via.placeholder.com/300x200?text=House+4"
+    },
+    {
+      "id": 5,
+      "purpose": "buy",
+      "location": "New York, USA",
+      "type": "Industrial Home",
+      "price": "$500,000",
+      "image": "https://via.placeholder.com/300x200?text=House+5"
+    },
+    {
+      "id": 6,
+      "purpose": "rent",
+      "location": "Toronto, Canada",
+      "type": "Residential Home",
+      "price": "$1300/month",
+      "image": "https://via.placeholder.com/300x200?text=House+6"
+    }
+  ]
+}
